@@ -1,0 +1,18 @@
+Modulation_Classify
+prerequisite: communication toolbox; deeplearning toolbox
+--Modulation_Classify.m
+	Label = Modulation_Classify(sig)
+	input: 1*N complex sig	
+	output: 0~9  
+--Test.m
+	10类信号每类信号10个
+	RF: rand(8,12) 
+	BW: rand(5,100)
+	PW: rand(1,20) 
+	SNR: rand{0,2,4,6,8,10}
+--Functions
+	--hermite_s_method.m 时频分析工具
+	--image_process.m
+	--trainedNetwork.mat	
+		--trainedNetwork 训练后的卷积神经网络
+	--Intra_pulse_IF_sig 产生仿真信号
